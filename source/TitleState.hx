@@ -54,6 +54,9 @@ class TitleState extends MusicBeatState
 
 	override public function create():Void
 	{
+	  		#if android
+		FlxG.android.preventDefaultKeys = [BACK];
+		#end
 		#if (polymod && !html5)
 		if (sys.FileSystem.exists('mods/')) {
 			var folders:Array<String> = [];
@@ -67,7 +70,7 @@ class TitleState extends MusicBeatState
 				polymod.Polymod.init({modRoot: "mods", dirs: folders});
 			}
 		}
-
+		#if android FlxG.android.justReleased.BACK #end
 		//Gonna finish this later, probably
 		#end
 		FlxG.game.focusLostFramerate = 60;
