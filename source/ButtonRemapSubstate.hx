@@ -7,8 +7,6 @@ class ButtonRemapSubstate extends FlxSubState
 	public function new()
 	{
 		super();
-	}
-}
 	addVirtualPad(FULL, A_B);
 
 	//if you want it to have a camera
@@ -31,3 +29,6 @@ class ButtonRemapSubstate extends FlxSubState
 	#if android
 	androidc.visible = false;
 	#end
+	}
+}
+	
