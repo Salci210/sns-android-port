@@ -7,13 +7,7 @@ import flixel.math.FlxPoint;
 
 import androidcontrols.FlxVirtualPad;
 import androidcontrols.Hitbox;
-#if android
-	import flixel.group.FlxGroup;
-	import ui.Hitbox;
-	import ui.FlxVirtualPad; 
-	import flixel.ui.FlxButton;
-  import android.AndroidControls.AndroidControlsSetup;
-	#end
+
 
 class Config {
 	var save:FlxSave;
