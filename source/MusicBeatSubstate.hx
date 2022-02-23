@@ -6,6 +6,13 @@ import flixel.FlxSubState;
 import flixel.FlxBasic;
 import flixel.FlxSprite;
 
+	
+
+class MusicBeatSubstate extends FlxSubState
+{
+	public function new()
+	{
+		super();
 	addVirtualPad(FULL, A_B);
 
 	//if you want it to have a camera
@@ -28,12 +35,6 @@ import flixel.FlxSprite;
 	#if android
 	androidc.visible = false;
 	#end
-
-class MusicBeatSubstate extends FlxSubState
-{
-	public function new()
-	{
-		super();
 	}
 
 	private var lastBeat:Float = 0;
