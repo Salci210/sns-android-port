@@ -14,28 +14,7 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.FlxCamera;
 
-	addVirtualPad(FULL, A_B);
-
-	//if you want it to have a camera
-	addPadCamera()
-
-	//in states, those needs to be added before super.create();
-	//in substates, in fuction new at the last line add those
-
-	//on Playstate.hx after all
-	//obj.camera = ...
-	//add
-	addAndroidControls();
-
-	//to make the controls visible the code is
-	#if android
-	androidc.visible = true;
-	#end
-
-	//to make the controls invisible the cose is
-	#if android
-	androidc.visible = false;
-	#end
+	
 
 class PauseSubState extends MusicBeatSubstate
 {
@@ -60,6 +39,28 @@ class PauseSubState extends MusicBeatSubstate
 		for (i in 0...CoolUtil.difficultyStuff.length) {
 			var diff:String = '' + CoolUtil.difficultyStuff[i][0];
 			difficultyChoices.push(diff);
+	addVirtualPad(FULL, A_B);
+
+	//if you want it to have a camera
+	addPadCamera()
+
+	//in states, those needs to be added before super.create();
+	//in substates, in fuction new at the last line add those
+
+	//on Playstate.hx after all
+	//obj.camera = ...
+	//add
+	addAndroidControls();
+
+	//to make the controls visible the code is
+	#if android
+	androidc.visible = true;
+	#end
+
+	//to make the controls invisible the cose is
+	#if android
+	androidc.visible = false;
+	#end
 		}
 		difficultyChoices.push('BACK');
 
