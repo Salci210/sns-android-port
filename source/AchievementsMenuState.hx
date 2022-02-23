@@ -70,7 +70,6 @@ class AchievementsMenuState extends MusicBeatState
 		changeSelection();
 
 		super.create();
-	}
 		addVirtualPad(FULL, A_B);
 
 	//if you want it to have a camera
@@ -93,6 +92,8 @@ class AchievementsMenuState extends MusicBeatState
 	#if android
 	androidc.visible = false;
 	#end
+	}
+		
 
 	override function update(elapsed:Float) {
 		super.update(elapsed);
