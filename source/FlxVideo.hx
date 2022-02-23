@@ -3,7 +3,6 @@ import openfl.net.NetConnection;
 import openfl.net.NetStream;
 import openfl.events.NetStatusEvent;
 import openfl.media.Video;
-#else
 import openfl.events.Event;
 import vlc.VlcBitmap;
 #end
@@ -45,6 +44,7 @@ class FlxVideo extends FlxBasic {
 			}
 		});
 		netStream.play(name);
+
 
 		#elseif desktop
 		// by Polybius, check out PolyEngine! https://github.com/polybiusproxy/PolyEngine
