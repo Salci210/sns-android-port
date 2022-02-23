@@ -8,7 +8,6 @@ import flixel.math.FlxPoint;
 import androidcontrols.FlxVirtualPad;
 import androidcontrols.Hitbox;
 
-
 class Config {
 	var save:FlxSave;
 
